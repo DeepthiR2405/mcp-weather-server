@@ -9,7 +9,11 @@ def root():
 
 @app.get("/weather")
 def get_weather(city: str):
+<<<<<<< HEAD
     API_KEY = "YOUR_API_KEY_HERE"  # Replace
+=======
+    API_KEY = "kpat_YnoH9C7cg97PT34YnBefgFBwoYbXsNa4tV53SUeLOMBgky8bW"  # Replace
+>>>>>>> 589c5b0 (Added API key and updated weather endpoint)
 
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
     res = requests.get(url)
